@@ -103,7 +103,7 @@ var info = [
 var element = 
 	React.createElement('ul', {},
 		React.createElement('h1', {}, 'Lista filmów'),
-		React.createElement('li', {}, Movie),
+		React.createElement(Movie, {info: info_id, info: name, info: descr, info: src}),
 
 	);
 ReactDOM.render(element, document.getElementById('app'));
